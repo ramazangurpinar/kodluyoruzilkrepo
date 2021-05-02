@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="style.css">    
+    <style>
+        body {font-family: Arial, Helvetica, sans-serif;}
+        * {box-sizing: border-box;}
+
+        input[type=text], select, textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+        }
+
+        input[type=submit] {
+        background-color: #04AA6D;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+        background-color: #45a049;
+        }
+
+        .container {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+        margin-left: 150px;
+        margin-right: 150px;
+        }
+    </style>
+</head>
+<body>
+<h1>İletişim</h1>
+<nav>
+    <a href="index.html">Anasayfa</a> |
+    <a href="about.html">Hakkımda</a> |
+    <a href="social.html">Sosyal Medya</a> 
+</nav>
+<br>
+<div class="container">
+  <form action="#">
+    <label for="fname">İsim</label>
+    <input type="text" id="fname" name="firstname" placeholder="İsim Giriniz!">
+
+    <label for="lname">Soyisim</label>
+    <input type="text" id="lname" name="lastname" placeholder="Soyisim Giriniz!">
+
+    <label for="country">Ülke</label>
+    <select id="country" name="country">
+      <option value="turkey">Turkey</option>
+      <option value="usa">USA</option>
+    </select>
+
+    <label for="subject">Konu</label>
+    <textarea id="subject" name="subject" placeholder="Birşeyler yaz..." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+<br><br><br><br><br>
+<footer>
+    <p>Author: Ramazan Gürpınar</p>
+    <p><a href="mailto:r.gurpinar@hotmail.com">r.gurpinar@hotmail.com</a></p>
+</footer>  
+</body>
+</html>
